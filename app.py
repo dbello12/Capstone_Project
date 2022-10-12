@@ -6,7 +6,7 @@ import pickle
 app = Flask(__name__)
 
 # load the trained model (Pickle)
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('RF_classifier_model', 'rb'))
 
 @app.route('/')
 def home():
